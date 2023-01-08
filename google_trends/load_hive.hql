@@ -1,6 +1,6 @@
 CREATE EXTERNAL TABLE IF NOT EXISTS countries_trends 
 ( 
-  `date` STRING,
+  `date` TIMESTAMP,
   `Argentina` INT, 
   `France` INT, 
   `Croatia` INT, 
@@ -17,7 +17,7 @@ OVERWRITE INTO TABLE countries_trends;
 
 CREATE EXTERNAL TABLE IF NOT EXISTS players_trends 
 ( 
-  `date` STRING,
+  `date` TIMESTAMP,
   `Messi` INT, 
   `Mbappe` INT, 
   `Lewandowski` INT, 
@@ -35,7 +35,7 @@ OVERWRITE INTO TABLE players_trends;
 
 CREATE EXTERNAL TABLE IF NOT EXISTS wins_trends 
 ( 
-  `date` STRING,
+  `date` TIMESTAMP,
   `Argentina win` INT, 
   `France win` INT, 
   `isPartial` STRING
